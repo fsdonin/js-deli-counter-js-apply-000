@@ -1,6 +1,9 @@
+var lastCust = 0;
+
 function takeANumber(currentLine, newPersonName) {
   currentLine.push(newPersonName)
-  let welcomeStr = "Welcome, " + newPersonName + ". You are number " + currentLine.length + " in line."
+  lastCust += 1;
+  let welcomeStr = "Welcome, " + newPersonName + ". You are number " + lastCust + " in line."
   
   return welcomeStr
 }
